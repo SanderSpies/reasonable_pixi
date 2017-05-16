@@ -105,7 +105,7 @@ class matrix ::a=1. ::b=0. ::c=0. ::d=1. ::tx=0. ::ty=0. () => {
     array
   };
 
-  pub apply pos::(pos:Point.point) newPos::(newPos:option Point.point)=? => {
+  pub apply pos::(pos:Point.point) newPos::(newPos:option Point.point)=? () => {
     let newPos = switch newPos {
       | Some newPos => newPos
       | None => new Point.point()
@@ -118,7 +118,7 @@ class matrix ::a=1. ::b=0. ::c=0. ::d=1. ::tx=0. ::ty=0. () => {
     newPos
   };
 
-  pub applyInverse pos::(pos:Point.point) newPos::(newPos:option Point.point)=? => {
+  pub applyInverse pos::(pos:Point.point) newPos::(newPos:option Point.point)=? () => {
     let newPos = switch newPos {
       | Some newPos => newPos
       | None => new Point.point()
